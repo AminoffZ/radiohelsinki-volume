@@ -1,6 +1,6 @@
-# Radio Helsinki Audio Controls
+# Radio Helsinki Volume Controls
 
-Adds an audio controller to the bottom of the page.
+Adds a volume controller to the bottom of the page.
 
 ## Contributing
 
