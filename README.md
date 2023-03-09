@@ -2,6 +2,14 @@
 
 Adds an audio controller to the bottom of the page.
 
+## Contributing
+
+Setup  
+```npm install```  
+Build  
+```npm run build```  
+The build folder (dist/) is configured in webpack/webpack.config.js. content.ts and script.ts are added to dist/ along with anything inside public/. You can add more files to src/scripts, just remember to add the relevant changes to webpack.config.js.  
+
 # License
 
 MIT License
