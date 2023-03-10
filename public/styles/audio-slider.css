@@ -1,9 +1,8 @@
 /*generated with Input range slider CSS style generator (version 20211225)
 https://toughengineer.github.io/demo/slider-styler*/
 input[type="range"].styled-slider {
-  width: 90vw;
-  max-width: 256px;
   margin: 0 !important;
+  width: 100%;
   height: 10px;
   -webkit-appearance: none;
   cursor: pointer;

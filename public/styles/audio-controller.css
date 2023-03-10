@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 54px;
+  max-width: 256px;
 }
 
 .prevent-select {
@@ -11,8 +17,6 @@
 }
 
 .audio-symbol {
-  position: absolute;
-  left: 7px;
   cursor: pointer;
 }
 
@@ -21,16 +25,8 @@
   height: 17px;
   margin-top: 0;
   margin-bottom: 0px;
-  z-index: 2000000001;
   background-color: white;
-  position: fixed;
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 8px 8px 0 0;
-  max-width: 312px;
-  left: 50%;
-  transform: translate(-50%);
 }
