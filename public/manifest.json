@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Radio Helsinki Volume Control",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "web_accessible_resources": [
     {
       "resources": [
@@ -10,14 +10,23 @@
         "styles/audio-controller.css",
         "styles/audio-slider.css"
       ],
-      "matches": ["https://*.radiohelsinki.fi/*"]
+      "matches": [
+        "https://*.radiohelsinki.fi/*"
+      ]
     }
   ],
   "content_scripts": [
     {
-      "matches": ["https://*.radiohelsinki.fi/*"],
-      "js": ["content.js"],
-      "css": ["styles/audio-controller.css", "styles/audio-slider.css"]
+      "matches": [
+        "https://*.radiohelsinki.fi/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles/audio-controller.css",
+        "styles/audio-slider.css"
+      ]
     }
   ],
   "action": {
