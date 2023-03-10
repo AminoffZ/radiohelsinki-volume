@@ -28,8 +28,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "mouiylus@gmail.com"
+        git config --global user.name "Mauritz Aminoff"
         git add public/manifest.json
         git commit -m "Update version number"
         git push
