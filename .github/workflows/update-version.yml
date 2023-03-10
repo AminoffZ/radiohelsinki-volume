@@ -1,0 +1,35 @@
+name: Update version on main push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install jq
+      run: sudo apt-get install jq
+
+    - name: Update version number in manifest.json
+      run: |
+        version=`jq -r '.version' public/manifest.json`
+        major=`echo $version | cut -d. -f1`
+        minor=`echo $version | cut -d. -f2`
+        patch=`echo $version | cut -d. -f3`
+        new_version="$major.$minor.$(($patch+1))"
+        jq --arg v "$new_version" '.version = $v' public/manifest.json > public/manifest.json.tmp
+        mv public/manifest.json.tmp public/manifest.json
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git add public/manifest.json
+        git commit -m "Update version number"
+        git push
