@@ -1,3 +1,6 @@
+[![Google Chrome](https://img.shields.io/chrome-web-store/v/ghdhbfjejpjccihijhkoehngceifahdk?label=Get%20for%20Chrome&logo=Google%20Chrome)](https://chrome.google.com/webstore/detail/viaplay-keyboard-shortcut/ghdhbfjejpjccihijhkoehngceifahdk)
+[![Mozilla Firefox](https://img.shields.io/amo/v/radio-helsinki-volume-control?label=Get%20for%20Firefox&logo=Firefox)](https://addons.mozilla.org/en-US/firefox/addon/radio-helsinki-volume-control/)
+
 # Radio Helsinki Volume Controls
 
 Adds a volume controller to the bottom of the page.
